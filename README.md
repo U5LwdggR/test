@@ -1,76 +1,139 @@
-# Projet Frontend React
+# React Frontend Project
 
-## 1. Aperçu technique et choix architecturaux
+## 1. Technical Overview and Architectural Choices
 
-Ce projet est un **frontend développé en React.js** suivant une architecture modulaire pour garantir la clarté, la maintenabilité et l’évolutivité du code.
+This project is a frontend developed with React.js, following a modular architecture to ensure code clarity, maintainability, and scalability.
 
-**Organisation des dossiers :**
+**Folder Structure :**
 
-- **`assets/`** : ressources statiques (images, icônes, fichiers divers)
-- **`components/`** : composants réutilisables (boutons, formulaires, cartes, etc.)
-- **`contexts/`** : gestion des contextes React (authentification, thèmes, etc.)
-- **`layout/`** : composants de structure globale (sidebar, header, footer)
-- **`model/`** : gestion des modèles/données et structures des objets
-- **`pages/`** : pages principales de l’application
-- **`styles/`** : fichiers de style globaux ou spécifiques (CSS, SCSS, etc.)
-- **`App.jsx`** : composant racine qui contient la configuration des routes et la structure globale
-- **`main.jsx`** : point d’entrée de l’application
-- **`index.css`** & **`App.css`** : styles globaux
+- **`assets/`** : static resources (images, icons, various files)
+- **`components/`** : reusable components (buttons, forms, cards, etc.)
+- **`contexts/`** : React context management (authentication, themes, etc.)
+- **`layout/`** : global structural components (sidebar, header, footer)
+- **`model/`** : data models and object structures
+- **`pages/`** : main application pages
+- **`styles/`** : global or specific style files (CSS, SCSS, etc.)
+- **`App.jsx`** : root component containing the routing configuration and global structure
+- **`main.jsx`** : application entry point
+- **`index.css`** & **`App.css`** :  global styles
 
-**Choix techniques :**
+**Technical Choices :**
 
-- **React.js** pour la rapidité de développement et la flexibilité.
-- **Architecture modulaire** pour séparer clairement les responsabilités.
-- **Context API** pour la gestion des états globaux.
+- **React.js** for development speed and flexibility.
+- **Architecture modulaire** to clearly separate responsibilities.
+- **Context API**  for global state management.
 
 ---
 
-## 2. Prérequis
+## 2. Prerequisites
 
-Avant de lancer le projet, assurez-vous d’avoir :
+Before running the project, make sure you have:
 
 - **Node.js** (version 18 ou plus)
-- **npm** ou **yarn** comme gestionnaire de packages
-- Un éditeur de code comme **VS Code**
-- Un navigateur moderne (Chrome, Edge, Firefox)
-
+- **npm** ou **yarn** as a package manager
+- A code editor like VS Code
+- A modern browser (Chrome, Edge, Firefox)
 ---
 
-## 3. Installation et exécution locale
+## 3. Installation and Local Execution
 
-    ### a. Cloner le dépôt
+    ### a. Clone the repository
 
-    git clone https://github.com/mon-compte/mon-projet.git
+    git clone https://github.com/U5LwdggR/test
     cd mon-projet
 
-    ## c. Installer les dépendances
-    npm install ou yarn install( en foction du gestionnaire de dependance que vous utilise)
+    ## c. Install dependencies
+    npm install ou yarn install( depending on the package manager you use)
 
-    ## d. Lancer le projet
+    ## d.Run the project
     npm run dev
 
-    ## e. L’application sera disponible à l’adresse :
+    ## e. The application will be available at:
     http://localhost:5173
 
-## 4. Outils d’IA utilisés
+## 4. AI Tools Used
 
-Cursor’s Chat – génération et correction de code React
+Cursor’s Chat – for generating and correcting React code
 
-GitHub Copilot – suggestions automatiques et complétion de code
+GitHub Copilot – for automatic suggestions and code completion
 
-## 5. Prompts clés utilisés
+perplexity for search
 
-"Crée un composant React pour un dashboard avec sidebar et header responsive"
+## 5.  Key Prompts Used
 
-"Génère une architecture React propre avec Context API et composants réutilisables"
+        - "Create a React component for a dashboard with responsive sidebar and header"
+        
+        - "Optimize performance and reusability of a dynamic filter component"
+        
+        - " Design and develop a responsive, modern user interface for a financial dashboard displaying a user's asset portfolio.
+        
+        Technical Specifications:
+        Framework: Use [React/Vue.js/Angular] with [Tailwind CSS/Material UI/Bootstrap]
+        
+        Responsive Design: Mobile, tablet, and desktop-friendly
+        
+        Data Visualization: Integrate [Chart.js/D3.js/Highcharts] for dynamic charts
+        
+        Fake Data Generation: Use [Faker.js/Mockaroo] to create realistic mock data
+        
+        UI Components:
+        Header:
+        
+        App logo + name
+        
+        User menu (profile picture, name, notification bell)
+        
+        Portfolio Summary:
+        
+        "Total Assets" card (dynamic amount)
+        
+        30-day change (+/- % indicator with color coding)
+        
+        Mini line chart (monthly trend)
+        
+        Detailed Asset Breakdown:
+        
+        Sortable/filterable table with columns:
+        
+        Asset (Stocks, Crypto, Real Estate, etc.)
+        
+        Current Value
+        
+        Allocation (%)
+        
+        Performance (colored badge)
+        
+        Interactive pie chart (asset distribution)
+        
+        Recent Activity Section:
+        
+        Last 5 transactions (date, amount, status)
+        
+        "Add Funds" CTA button
+        
+        Mock Data Requirements:
+        10+ diverse assets (e.g., S&P 500 ETF, Bitcoin, NYC Real Estate)
+        
+        Balances ranging from $1,000 to $250,000
+        
+        Randomized performance (-12% to +30%)
+        
+        Multi-currency support (USD, EUR, BTC)
+        
+        Design Constraints:
+        Color Scheme: Professional (blues/dark mode optional)
+        
+        Icons: SVG-based, matching asset types
+        
+        Micro-interactions: Smooth hover/loading animations
+        
+        Export Options: PDF/CSV mock buttons"
 
-"Optimise les performances et la réutilisabilité d’un composant de filtre dynamique"
+## 6. Expected Backend Structures and Payloads
 
-## 6. Structures et payloads attendus du backend
+For this frontend, the backend must provide structured data in JSON format.
 
-Pour ce frontend, le backend doit fournir des données structurées sous format JSON.
-
-Exemple — Authentification utilisateur
+Example — User Authentication
 {
 "id": 1,
 "nom": "Dupont",
